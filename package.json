@@ -1,0 +1,36 @@
+{
+  "name": "gocart",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "prisma:migrate": "prisma migrate dev --name add_admin_category --preview-feature",
+    "prisma:seed": "node prisma/seed.js",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.13.0",
+    "@reduxjs/toolkit": "^2.8.2",
+    "bcryptjs": "^2.4.3",
+    "date-fns": "^4.1.0",
+    "dotenv": "^16.3.1",
+    "jsonwebtoken": "^9.0.0",
+    "lucide-react": "^0.525.0",
+    "nanoid": "^5.1.11",
+    "next": "^15.5.19",
+    "next-auth": "^4.24.14",
+    "prisma": "^5.13.0",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
+    "react-hot-toast": "^2.5.2",
+    "react-is": "^19.2.7",
+    "react-redux": "^9.2.0",
+    "recharts": "^3.1.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "tailwindcss": "^4"
+  }
+}
